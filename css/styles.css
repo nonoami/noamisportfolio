@@ -33,66 +33,57 @@ p {
     line-height: 34.8px;
 }
 
+#redHalf {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+}
+
 #splash {
     background-color: #A00603;
     position: absolute;
-    width: 1512px;
-    height: 982px;
+    width: 100%;
+    max-height: 982px;
     left: 0px;
     top: 0px;
+    display: flex;
 }
 
 header {
-    position: relative;
-    width: 825px;
-    height: 128.97px;
     margin: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #logo {
-    position: absolute;
-    width: 120p;
+    width: 120px;
     height: 128.97px;
 }
 
 .portfolioHeader {
-    position: absolute;
-    top: -24px;
-    left: 184px;
     width: 345px;
 }
 
 #menuIcon {
-    position: absolute;
-    left: 785px;
+
 }
 
 #spanish {
-    position: absolute;
-    left: 32px;
-    top: 280px;
     color: rgba(255, 241, 204, 0.65);
+    line-height: 0;
 }
 
-.welcome {
-    position: absolute;
-    width: 717px;
-    height: 152px;
-    left: 32px;
-    top: 368px;
+#welcome {
+    margin: 32px;
 }
 
-.titleCaption {
-    position: absolute;
-    left: 32px;
-    top: 552px;
-}
 
 #drawing img {
-    position: absolute;
     width: 623px;
     height: 982px;
-    left: 889px;
     top: 0;
 }
 
@@ -101,7 +92,7 @@ header {
     left: 0px;
     top: 982px;
     position: absolute;
-    width: 1512px;
+    width: 100%;
     height: 700px;
     display: flex;
     align-items: center;
@@ -130,11 +121,6 @@ header {
     top: 0px;
 }
 
-.PAWStext {
-    width: 806px;
-    height: 365px;
-}
-
 .PAWSdescribe {
     color: #040E13;
 }
@@ -144,7 +130,7 @@ header {
     left: 0px;
     top: 1683px;
     position: absolute;
-    width: 1512px;
+    width: 100%;
     height: 700px;
     display: flex;
     align-items: center;
@@ -158,7 +144,6 @@ header {
 
 .EcoGeek, .text {
     width: 806px;
-    height: 315px;
 }
 
 #About {
@@ -166,7 +151,7 @@ header {
     left: 0px;
     top: 2383px;
     position: absolute;
-    width: 1512px;
+    width: 100%;
     height: 700px;
     display: flex;
     align-items: center;
@@ -193,7 +178,7 @@ footer {
     background-color: #6B0504;
     position: absolute;
     height: 340px;
-    width: 1512px;
+    width: 100%;
     left: 0;
     top: 3083px;
         display: grid;
@@ -244,7 +229,6 @@ footer {
 
 @media screen and (min-width: 1280px) {
     #splash {
-        width: 1280px;
         height: 700px;
     }
     header {
@@ -262,7 +246,6 @@ footer {
     #PAWS {
         top: 700px;
         position: absolute;
-        width: 1280px;
         height: 700px;
     }
     .PAWStext {
@@ -271,7 +254,6 @@ footer {
     }
     #EcoGeek {
         top: 1400px;
-        width: 1280px;
         height: 700px;
     }
     .EcoGeek, .text {
@@ -280,7 +262,6 @@ footer {
     }
     #About {
         top: 2100px;
-        width: 1280px;
         height: 700px;
     }   
     #bioPhoto {
@@ -288,7 +269,6 @@ footer {
         height: 496px;
     }
     footer {
-        width: 1280px;
         top: 2800px;
   }
 }
